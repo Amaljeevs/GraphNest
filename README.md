@@ -10,11 +10,6 @@ It demonstrates how to build **scalable, high-throughput GraphQL APIs** with Spr
 
 * CRUD operations for **User, Product, Category, and Order**.
 * GraphQL endpoints with **queries and mutations**.
-* Common response object (`ServerResponse`) including:
-
-  * `code` – HTTP-like status code
-  * `message` – Status message
-  * `details` – Payload (list or single object)
 * H2 in-memory database for easy setup.
 * Spring Boot + Lombok + JPA.
 * Easily extendable for other entities.
@@ -127,3 +122,4 @@ http://localhost:8080/graphiql
 ## **License**
 
 This project is open-source and free to use.
+
