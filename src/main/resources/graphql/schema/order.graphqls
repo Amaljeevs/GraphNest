@@ -1,0 +1,16 @@
+type Order {
+    id: ID!
+    productId: ID!
+    quantity: Int!
+}
+
+extend type Query {
+    orders(search: String): [Order]
+}
+
+
+extend type Mutation {
+    addOrder(productId: ID!, quantity: Int!): Order
+    updateOrder(id: ID!, productId: ID, quantity: Int): Order
+    deleteOrder(id: ID!): Boolean
+}
